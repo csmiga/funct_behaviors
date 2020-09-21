@@ -1,10 +1,7 @@
 ## funct (Functional Test Framework)
 [//]: # (<img src="https://www.selenium.dev/images/selenium_logo_large.png" height="60" width="60">)
 
-funct is a functional test framework utilizing Python, Behave, and Selenium for
-automated user acceptence testing (UAT). Automated testing adds value in a software development life cycle (SDLC) using continuous integration and continuous delivery
-(CI/CD) practices. Speed of delivery while maintaining quaility is the
-requirement.
+funct behaviors is a collection of test conditions for various functional testing behaviors. See below for addtional details.
 
 *Open Source Software (OSS) = Opportunity*
 
