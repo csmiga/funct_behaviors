@@ -24,8 +24,7 @@ def step_impl(context, phrase):
     search_input = context.browser.find_element_by_id('search_form_input_homepage')
     search_input.send_keys(phrase + Keys.RETURN)
 
-
-@when('the user searches for the phrase')
+when('the user searches for the phrase')
 def step_impl(context):
     search_input = context.browser.find_element_by_id('search_form_input_homepage')
     search_input.send_keys(context.text + Keys.RETURN)
