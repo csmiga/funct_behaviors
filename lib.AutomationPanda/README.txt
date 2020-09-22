@@ -4,6 +4,9 @@ Python Testing 101: Behave
 behavior-driven-python
   - https://github.com/AndyLPK247/behavior-driven-python
 
+Behavior Driven Python with pytest-bdd
+  - https://testautomationu.applitools.com/behavior-driven-python-with-pytest-bdd/chapter3.html
+
 How can I see print() statements in behave (BDD)
   - https://www.thetopsites.net/article/53482400.shtml
 
