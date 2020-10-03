@@ -9,7 +9,8 @@ try:
     options.binary_location = '/usr/bin/firefox'
 
     driver = webdriver.Firefox(firefox_options=options)
-    driver.get('http://www.google.com')
+    #driver.get('http://www.google.com')
+    driver.get('https://pluto.tv')
 
     #print(driver.page_source)
     print("Title: %s" % driver.title)

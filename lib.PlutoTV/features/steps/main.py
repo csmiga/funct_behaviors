@@ -9,11 +9,11 @@ def step_impl(context):
 
 @when('pluto.tv is reachable')
 def step_impl(context):
-    context.browser.get('http://www.google.com')
+    context.browser.get('https://pluto.tv/')
 
 @then('test pluto.tv main page')
 def step_impl(context):
-    assert context.browser.title == "Google"
+    assert context.browser.title == "Pluto TV - It's Free TV"
 
 
 #@then('test pluto.tv main page')
