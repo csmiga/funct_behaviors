@@ -1,3 +1,5 @@
+# -- FILE:features/main.feature
+
 Feature: check and visit pluto.tv
 
     Scenario: run a simple test at pluto.tv
