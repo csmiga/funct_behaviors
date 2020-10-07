@@ -12,7 +12,8 @@ try:
     options.binary_location = '/usr/bin/chromium-browser'
 
     driver = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=options)
-    driver.get('http://www.google.com')
+    #driver.get('http://www.google.com')
+    driver.get('https://pluto.tv')
 
     #print(driver.page_source)
     print("Title: %s" % driver.title)

@@ -25,8 +25,17 @@ def before_tag(context, tag):
             options = webdriver.FirefoxOptions()
             options.add_argument('--headless')
             options.binary_location = '/usr/bin/firefox'
-
             context.browser = webdriver.Firefox(firefox_options=options)
+            context.browser.implicitly_wait(10)
+        elif browser_type == "chrome":
+            options = webdriver.ChromeOptions()
+            options.add_argument('--headless')
+            options.add_argument('--no-sandbox')
+            options.add_argument('--disable-dev-shm-usage')
+            options.add_argument('--ignore-certificate-errors')
+            options.add_argument("--test-type")
+            options.binary_location = '/usr/bin/chromium-browser'
+            context.browser = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=options)
             context.browser.implicitly_wait(10)
         else:
             context.browser = webdriver.PlainVanilla()
@@ -36,6 +45,8 @@ def after_tag(context, tag):
     if tag.startswith("browser."):
         browser_type = tag.replace("browser.", "", 1)
         if browser_type == "firefox":
+            context.browser.quit()
+        elif browser_type == "chrome":
             context.browser.quit()
         else:
             context.browser.quit()
