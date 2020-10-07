@@ -1,7 +1,5 @@
 # -- FILE:features/steps/main.py
 
-#import time
-#import os
 from selenium import webdriver
 from behave import *
 
