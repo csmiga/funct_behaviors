@@ -1,7 +1,7 @@
 # -- FILE:features/steps/main.py
 
-import time
-import os
+#import time
+#import os
 from selenium import webdriver
 from behave import *
 
@@ -11,18 +11,15 @@ def step_impl(context):
 
 @when('pluto.tv is reachable')
 def step_impl(context):
+    #options = webdriver.FirefoxOptions()
+    #options.add_argument('--headless')
+    #options.binary_location = '/usr/bin/firefox'
 
-    options = webdriver.FirefoxOptions()
-    options.add_argument('--headless')
-    options.binary_location = '/usr/bin/firefox'
-
-    context.browser = webdriver.Firefox(firefox_options=options)
-    context.browser.implicitly_wait(10)
+    #context.browser = webdriver.Firefox(firefox_options=options)
+    #context.browser.implicitly_wait(10)
 
     context.browser.get('https://pluto.tv/')
-    #pass
 
 @then('test pluto.tv main page')
 def step_impl(context):
     assert context.browser.title == "Pluto TV - It's Free TV"
-    #pass
